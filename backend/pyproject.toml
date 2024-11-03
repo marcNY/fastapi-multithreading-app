@@ -1,0 +1,21 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "random_number_generator"
+version = "0.1.0"
+description = "A FastAPI application with Redis, Docker, and multithreading."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+packages = [
+    { include = "app" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+redis = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
